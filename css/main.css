@@ -1,0 +1,56 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities/api";
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;  
+}
+/*========================== menu =====================*/
+#menu li > a /* si el elemento a esta adentro del li*/
+{
+    font-size: 18px;
+    font-weight: bold;/* "bold" negrita*/
+    color:#3f3f3f;
+}
+
+#menu form > button /*si el elemento buttom esta adentro de form*/ 
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-inner
+{
+ max-height: 39rem;/*tenemos un limite en el alto*/  
+}
+
+@media (max-width: 768px)/*para pantallas normales*/
+{
+    #intro,#equipo
+    {
+        width: 90% !important;
+    }
+    #equipo p
+    {
+        display: none;
+    }
+    .servicio-fila
+    {
+        width: 100% !important;
+        text-align: center;
+    }
+
+}
+@media(max-width: 576px)/* para pantallas pequeñas */
+{
+     .icono-wrap
+     {
+        flex-wrap: wrap;
+        justify-content: center !important;
+     }
+}

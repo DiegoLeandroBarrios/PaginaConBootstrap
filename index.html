@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylessheet" href="./css/main.css">
+    <title>ExpertD.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- ==================================================-->
+    <!-- ENCABEZADO  -->
+  <header class="container-fluid bg-success d-flex justtifly-content-center"> 
+    <p class="text-info mb-0 p-2 fs-6">Contactanos al 3624-55-22-21</p><!--text *** color del texto-->
+  </header>
+  <!-- MENU DE INICIO -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 "id = "menu"><!--p3 significa el tamaño-->
+    <div class="container-fluid">
+      <a class="navbar-brand fs-5 fw-bold" href="#">
+        <span class = "text-info" >  ExpertD.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>  
+        
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="Email">
+          <button class="btn btn-success btn-primary-outline-success" type="bottom">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--SLIDER DE IMAGENES -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval = "3000"> <!--databsinterval es el lapso de tiempo en milisegundos-->
+        <img src="./img/slide1.JPG" class="d-block w-100" alt="slide1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval = "3000">
+        <img src="./img/slide2.JPG" class="d-block w-100" alt="slide2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval = "3000">
+        <img src="./img/slide3.JPG" class="d-block w-100" alt="slide3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" 
+    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" 
+    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+  <!--INTRO-->
+  <section class="W-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">MOMENTO UNICO<span class="text-success"> Hermosas Fotos</span></h1>
+    <p class="p-3 fs-4 "><span class="text-success">ExpertD.</span> Estas imagenes se tomaron con mucho amor.</p>
+  </section>
+  <!-- SERVICIOS -->
+  <section class="container-fluid">
+    <div class="row w-75 mx-auto my-5 servicio-fila">
+       <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap">
+        <img src= "./img/pngtree-dog-logo-design-template-graphic-sitting-puppy-logotypesign-and-symbol-image_123446.jpg" 
+        alt="perrito" width = "180" height="160">
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1 text-success">Desarrolando pagina con bootstrap</h3>
+            <p class="px-4">pagina de perritos de casa.</p>
+        </div>
+       </div>
+       <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap"> <!-- lg6 ocupa la mitad de 12 pantalla grande, md12 ocupa el espacio completo pantalla mediana-->
+        <img src= "./img/depositphotos_143741745-stock-illustration-dog-logo-illustration2022.jpg" 
+        alt="perrito" width = "180" height="160">
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1 text-success">Nuevo logotipo</h3>
+            <p class="px-4">pagina de perritos de casa.</p>
+        </div>
+       </div>
+    </div>
+    <div class="row w-75 mx-auto my-5 servicio-fila">
+        <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap"><!-- lg6 ocupa la mitad de 12 pantalla grande, md12 ocupa el espacio completo pantalla mediana-->
+         <img src= "./img/pngtree-dog-logo-vector-design-png-image_2066898.jpg" 
+         alt="perrito" width = "180" height="160">
+         <div>
+             <h3 class="fs-5 mt-4 px-4 pb-1 text-success">Adopción de perritos</h3>
+             <p class="px-4">pagina de perritos de casa.</p>
+         </div>
+        </div>
+        <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap">
+         <img src= "./img/logotipo-de-la-casa-en-color-azul-109657317.jpg" 
+         alt="perrito" width = "180" height="160">
+         <div>
+             <h3 class="fs-5 mt-4 px-4 pb-1 text-success">Amor de la Casa</h3>
+             <p class="px-4">pagina de perritos de casa.</p>
+         </div>
+        </div>
+     </div>
+    
+
+  </section>
+  <!-- ACERCA DE NOSOTROS-->
+  <div class="w-50 m-auto text-center" id="equipo">
+    <h1 class="mb-5 fs-2">Primera pagina con<span class="text-success"> bootstrap</span></h1>
+    <p class="fs-4 ">Página de práctica acerca de perritos.</p>
+  </div>
+  <div class=" mt-5 text-center">
+    <img class="img-fluid" src="./img/20220202_212109.jpg" alt="equipo">
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
