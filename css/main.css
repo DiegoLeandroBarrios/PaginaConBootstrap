@@ -1,10 +1,3 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/maps";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
-@import "bootstrap/scss/utilities/api";
-
 body
 {
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +8,7 @@ body
 {
     font-size: 18px;
     font-weight: bold;/* "bold" negrita*/
-    color:#3f3f3f;
+    color:#f3f3f3;
 }
 
 #menu form > button /*si el elemento buttom esta adentro de form*/ 
@@ -44,13 +37,78 @@ body
         width: 100% !important;
         text-align: center;
     }
+    #bg-contacto
+    {
+    position:relative;
+    top: 130px;
+    }
 
 }
 @media(max-width: 576px)/* para pantallas pequeñas */
 {
-     .icono-wrap
-     {
+     .icono-wrap{
         flex-wrap: wrap;
         justify-content: center !important;
      }
+}
+@media(max-width: 1200px)/*pantallas anchas*/
+{
+    #local
+    {
+        flex-wrap: wrap;/*apilacion*/ 
+        padding-top: 30px;
+    }
+    .wrapper
+    {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+.mapa{
+    background: url(../img/mapa.png);
+    width: 100%;  /*ancho 100%*/
+    height: 280px;  /*alto 500pixeles*/
+}
+#local
+{
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;/*se vea una linea en los parrafos*/
+    justify-content: center;
+}
+.wrapper
+{
+    width: 50%;
+    margin-left: 100px;
+    padding-top:  150px;
+}
+#numeros-local div
+{
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+#numeros-local div:not(:last-child)/*un borde al ultimo div*/
+{
+    border-right: 2px solid #3f3f3f;/*borde de derecha, solid es para la linea separatoria*/
+}
+#numeros-local div:not(:first-child)
+{
+    padding-left: 20px;
+}
+#numeros-local p
+{
+    margin: 0;
+}
+#bg-contacto
+{
+    position:relative;
+    top: 130px;
+}
+#seccion-contacto
+{
+    background-color: greenyellow;
+    min-height: 500px;
+    position: relative;
 }
