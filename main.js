@@ -1,10 +1,13 @@
-const app = document.getElementById('typewriter');/*representa el div donde se va a escribir con un metodo*/
-
-const typewriter = new Typewriter(app,
-    {
-        loop: true, delay: 75
+let app = document.getElementById('typewriter');
+ 
+let typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
 });
-
-typewriter.typeString('Los perritos de casa')
-.pauseFor(200).start();
-    
+ 
+typewriter
+  .pauseFor(2500)
+  .typeString('perritos de la casa')
+  .pauseFor(200)
+  .deleteChars(10)
+  .start();

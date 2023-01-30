@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body
 {
     font-family: 'Montserrat', sans-serif;
@@ -21,9 +22,21 @@ body
 {
  max-height: 39rem;/*tenemos un limite en el alto*/  
 }
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
 
 @media (max-width: 768px)/*para pantallas normales*/
-{
+{   #local 
+    {
+        flex-wrap: wrap;
+    }
+    #img-equipo
+    {
+        max-height:20rem !important;
+        width:90%;
+    }
     #intro,#equipo
     {
         width: 90% !important;
@@ -40,19 +53,34 @@ body
     #bg-contacto
     {
     position:relative;
-    top: 130px;
+    top: -130px;
     }
-
+    .wrapper
+    {
+        width:90%;
+        margin:auto;
+        padding-top:50px; 
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }    
 }
 @media(max-width: 576px)/* para pantallas pequeñas */
 {
+    
      .icono-wrap{
         flex-wrap: wrap;
         justify-content: center !important;
+        text-align: center;
      }
 }
 @media(max-width: 1200px)/*pantallas anchas*/
-{
+{    #intro, #equipo 
+    {
+        width:90% !important;
+        margin:auto;
+    }
     #local
     {
         flex-wrap: wrap;/*apilacion*/ 
@@ -69,7 +97,7 @@ body
 .mapa{
     background: url(../img/mapa.png);
     width: 100%;  /*ancho 100%*/
-    height: 280px;  /*alto 500pixeles*/
+    height: 500px;  /*alto 500pixeles*/
 }
 #local
 {
@@ -77,6 +105,7 @@ body
     padding-bottom: 300px;
     display: flex;/*se vea una linea en los parrafos*/
     justify-content: center;
+    margin-top: 50px;
 }
 .wrapper
 {
@@ -84,9 +113,16 @@ body
     margin-left: 100px;
     padding-top:  150px;
 }
+/*Seccion equipo*/
+#numeros-local
+{
+    margin:0 !important;
+    padding:0 !important;
+}
 #numeros-local div
 {
     padding: 0 20px 0 0;
+    text-align: left;
     height: 48px;
 }
 #numeros-local div:not(:last-child)/*un borde al ultimo div*/
@@ -101,14 +137,30 @@ body
 {
     margin: 0;
 }
+/*Contactos*/
 #bg-contacto
 {
     position:relative;
-    top: 130px;
+    top: -130px;
 }
 #seccion-contacto
 {
     background-color: greenyellow;
-    min-height: 500px;
+    min-height:500px;
     position: relative;
+}
+/*Contacto formulario*/
+#contenedor-formulario
+{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%); 
+   background: #f3f3f3;
+   border-radius: 5px;
+   max-width: 500px;
+}
+#titulo-formulario
+{
+    color: #3f3f3f;
 }
