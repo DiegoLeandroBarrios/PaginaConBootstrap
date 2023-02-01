@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--META TAGS-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CDN BOOTSTRAP CSS-->
     <link rel = "stylesheet" href="./css/main.css">
-    <title>ExpertD.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>ExpertD.</title>
   </head>
   <body>
     <!-- ==================================================-->
     <!-- ENCABEZADO  -->
-  <header class="container-fluid bg-success d-flex justtifly-content-center"> 
+  <header class="container-fluid bg-success d-flex justify-content-center"> 
     <p class="text-info mb-0 p-2 fs-6">Contactanos al 3624-55-22-21</p><!--text *** color del texto-->
   </header>
   <!-- MENU DE INICIO -->
@@ -29,10 +32,10 @@
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Equipo</a>
+            <a class="nav-link" href="#equipo">Equipo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#seccion-contacto">Contacto</a>
           </li>
         </ul>  
         
@@ -43,7 +46,7 @@
       </div>
     </div>
   </nav>
-  <!--SLIDER DE IMAGENES -->
+  <!--SLIDER DE IMAGENES CAROUSEL -->
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval = "3000"> <!--databsinterval es el lapso de tiempo en milisegundos-->
@@ -71,14 +74,14 @@
     </button>
   </div>
   <!--INTRO-->
-  <section class="W-50 mx-auto text-center pt-5" id="intro">
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
     <h1 class="p-3 fs-2 border-top border-3">MOMENTO UNICO<span class="text-success"> Hermosas Fotos</span></h1>
     <p class="p-3 fs-4 "><span class="text-success">ExpertD.</span> Estas imagenes se tomaron con mucho amor.</p>
   </section>
   <!-- SERVICIOS -->
-  <section class="container-fluid">
-    <div class="row w-75 mx-auto my-5 servicio-fila">
-       <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap">
+  <section class="w-100">
+    <div class="row w-75 mx-auto my-5"id="servicio-fila">
+       <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
         <img src= "./img/pngtree-dog-logo-design-template-graphic-sitting-puppy-logotypesign-and-symbol-image_123446.jpg" 
         alt="perrito" width = "180" height="160">
         <div>
@@ -86,7 +89,7 @@
             <p class="px-4">pagina de perritos de casa.</p>
         </div>
        </div>
-       <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap"> <!-- lg6 ocupa la mitad de 12 pantalla grande, md12 ocupa el espacio completo pantalla mediana-->
+       <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"> <!-- lg6 ocupa la mitad de 12 pantalla grande, md12 ocupa el espacio completo pantalla mediana-->
         <img src= "./img/depositphotos_143741745-stock-illustration-dog-logo-illustration2022.jpg" 
         alt="perrito" width = "180" height="160">
         <div>
@@ -95,8 +98,8 @@
         </div>
        </div>
     </div>
-    <div class="row w-75 mx-auto my-5 servicio-fila">
-        <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap"><!-- lg6 ocupa la mitad de 12 pantalla grande, md12 ocupa el espacio completo pantalla mediana-->
+    <div class="row w-75 mx-auto my-5"id="servicio-fila">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"><!-- lg6 ocupa la mitad de 12 pantalla grande, md12 ocupa el espacio completo pantalla mediana-->
          <img src= "./img/pngtree-dog-logo-vector-design-png-image_2066898.jpg" 
          alt="perrito" width = "180" height="160">
          <div>
@@ -104,7 +107,7 @@
              <p class="px-4">pagina de perritos de casa.</p>
          </div>
         </div>
-        <div class="col-lg-6 col-md-12 d-flex my-5 icono-wrap">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
          <img src= "./img/logotipo-de-la-casa-en-color-azul-109657317.jpg" 
          alt="perrito" width = "180" height="160">
          <div>
@@ -118,12 +121,12 @@
   </section>
   <!-- ACERCA DE NOSOTROS-->
   <section>
-  <div class="w-75 m-auto text-center" id="equipo">
+  <div class="container w-50 m-auto text-center" id="equipo">
     <h1 class="mb-5 fs-2">Primera pagina con<span class="text-success"> bootstrap</span></h1>
     <p class="fs-4 ">Página de práctica acerca de perritos.</p>
   </div>
   <div class=" mt-5 text-center">
-    <img id="img-equipo" class="img-fluid" src="./img/equipo.jpg" alt="equipo">
+    <img id="img-equipo" src="./img/equipo.jpg" alt="equipo">
   </div>
   <!--MAPA,LOCALIZACION-->
   <div id="local" class="border-top border-2">
@@ -131,11 +134,12 @@
     <div><div class="wrapper">
       <h2>Ubicado en Resistencia Chaco</h2>
       <h2 class="text-success mb-4" id="typewriter"></h2>
-      <p class="fs-5 tect-body">Mejor lugar en el mundo.</p>
-      <section class="d-flex" id="numeros-local"><div>
+      <p class="fs-5 text-body">Mejor lugar en el mundo.</p>
+      <section class="d-flex justify-content-start" id="numeros-local">
+        <div>
         <p class="text-success fs-5 ">248</p><!--fs5 equivalente a 125rem-->
         <p>Dias de sol</p>
-      </div>
+        </div>
       <div>
         <p class="text-success fs-5">100%</p>
         <p>Aprobado</p>
@@ -152,9 +156,9 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
     </div>
     <!--CONTENEDOR FORMULARIO-->
-    <div class="container" id="contenedor-formulario">
+    <div class="container border-top border-success" id="contenedor-formulario" style="max-width: 500px">
       <div id ="titulo-formulario" class="text-center mb-4">
-        <div><img src="./img/support.png" alt="contacto" class="img-fluid"></div>
+        <div><img src="./img/support.png" alt="contacto" class="img-fluid ps-5"></div>
         <h2>CONTACTOS</h2>
         <p class="fs-5">perritos lindos</p>
       </div>
@@ -178,6 +182,16 @@
     </form>
   </div>
   </section>
+  <!--FOOTER-->
+  <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3">ExpertD. &copy; con todos los derechos reservados 2023</p>
+    <div id="iconos">
+     <a href="https://twitter.com/BarriosDieguin"><i class="bi bi-twitter"></i></a>
+     <a href="https://github.com/DiegoLeandroBarrios"><i class="bi bi-github"></i></a>
+     <a href="https://www.linkedin.com/in/dieguin-barrios-64b40b225/"><i class="bi bi-linkedin"></i></a> 
+    </div>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="main.js"></script>
