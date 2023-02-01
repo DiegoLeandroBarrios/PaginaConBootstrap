@@ -17,7 +17,7 @@ body
     font-size: 18px;
     font-weight: bold;
 }
-
+/*SLIDER IMAGENES*/
 .carousel-inner
 {
  max-height: 39rem;/*tenemos un limite en el alto*/  
@@ -27,6 +27,95 @@ body
     width:50%;
 }
 
+
+/*SECCION NUESTRO EQUIPO MAPA*/
+#local
+{
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;/*se vea una linea en los parrafos*/
+    justify-content: center;
+    margin-top: 50px;
+}
+.mapa{
+    background: url(../img/mapa\ \(1\).png);
+    width: 100%;  /*ancho 100%*/
+    height: 500px;  /*alto 500pixeles*/
+}
+.wrapper
+{
+    width: 50%;
+    margin-left: 100px;
+    padding-top:  150px;
+}
+/*Seccion equipo*/
+#numeros-local
+{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div
+{
+    padding: 0 20px 0 0;
+    text-align: left;
+    height: 48px;
+}
+#numeros-local div:not(:last-child)/*un borde al ultimo div*/
+{
+    border-right: 2px solid #3f3f3f;/*borde de derecha, solid es para la linea separatoria*/
+}
+#numeros-local div:not(:first-child)
+{
+    padding-left: 20px;
+}
+#numeros-local p
+{
+    margin: 0;
+}
+/*Contactos*/
+#bg-contacto
+{
+    position:relative;
+    top: -130px;
+}
+#seccion-contacto
+{
+    background-color: greenyellow;
+    min-height:500px;
+    position: relative;
+}
+/*Contacto formulario*/
+#contenedor-formulario
+{
+   position: absolute;/*lo posicionamos de forma absoluta*/ 
+   top: 30%;/*centrar un elemento*/
+   left: 50%;/*centrar objeto*/
+   transform: translate(-50%, -50%); 
+   background: grey;
+   border-radius: 5px;
+   max-width: 500px;
+}
+#titulo-formulario
+{
+    color: #3f3f3f;
+}
+/*FOOTER*/
+footer
+{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+footer p
+{
+    color: #f3f3f3;
+    text-align: center;
+}
+#iconos i
+{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
 @media (max-width: 768px)/*para pantallas normales*/
 {   #local 
     {
@@ -92,75 +181,4 @@ body
         margin: auto;
         padding-top: 50px;
     }
-}
-
-.mapa{
-    background: url(../img/mapa\ \(1\).png);
-    width: 100%;  /*ancho 100%*/
-    height: 500px;  /*alto 500pixeles*/
-}
-#local
-{
-    background: #f3f3f3;
-    padding-bottom: 300px;
-    display: flex;/*se vea una linea en los parrafos*/
-    justify-content: center;
-    margin-top: 50px;
-}
-.wrapper
-{
-    width: 50%;
-    margin-left: 100px;
-    padding-top:  150px;
-}
-/*Seccion equipo*/
-#numeros-local
-{
-    margin:0 !important;
-    padding:0 !important;
-}
-#numeros-local div
-{
-    padding: 0 20px 0 0;
-    text-align: left;
-    height: 48px;
-}
-#numeros-local div:not(:last-child)/*un borde al ultimo div*/
-{
-    border-right: 2px solid #3f3f3f;/*borde de derecha, solid es para la linea separatoria*/
-}
-#numeros-local div:not(:first-child)
-{
-    padding-left: 20px;
-}
-#numeros-local p
-{
-    margin: 0;
-}
-/*Contactos*/
-#bg-contacto
-{
-    position:relative;
-    top: -130px;
-}
-#seccion-contacto
-{
-    background-color: greenyellow;
-    min-height:500px;
-    position: relative;
-}
-/*Contacto formulario*/
-#contenedor-formulario
-{
-   position: absolute;
-   top: 30%;
-   left: 50%;
-   transform: translate(-50%, -50%); 
-   background: grey;
-   border-radius: 5px;
-   max-width: 500px;
-}
-#titulo-formulario
-{
-    color: #3f3f3f;
 }
