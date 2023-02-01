@@ -9,7 +9,7 @@ body
 {
     font-size: 18px;
     font-weight: bold;/* "bold" negrita*/
-    color:#f3f3f3;
+    color:#222222;
 }
 
 #menu form > button /*si el elemento buttom esta adentro de form*/ 
@@ -95,7 +95,7 @@ body
 }
 
 .mapa{
-    background: url(../img/mapa.png);
+    background: url(../img/mapa\ \(1\).png);
     width: 100%;  /*ancho 100%*/
     height: 500px;  /*alto 500pixeles*/
 }
@@ -156,7 +156,7 @@ body
    top: 30%;
    left: 50%;
    transform: translate(-50%, -50%); 
-   background: #f3f3f3;
+   background: grey;
    border-radius: 5px;
    max-width: 500px;
 }
