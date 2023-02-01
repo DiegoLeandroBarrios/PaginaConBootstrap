@@ -1,5 +1,4 @@
 let app = document.getElementById('typewriter');
- 
 let typewriter = new Typewriter(app, {
   loop: true,
   delay: 75,
@@ -7,7 +6,7 @@ let typewriter = new Typewriter(app, {
  
 typewriter
   .pauseFor(2500)
-  .typeString('perritos de la casa')
+  .typeString('Perritos de la casa')
   .pauseFor(200)
   .deleteChars(10)
   .start();
